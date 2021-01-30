@@ -1,0 +1,67 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+
+.about-title {
+  position: relative;
+  top: 30%;
+  h1 {
+    font-size: 56px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 31%;
+    left: 36%;
+    z-index: 1;
+    background: transparent;
+    span {
+      color: $yellowColor;
+      background: transparent;
+    }
+  }
+  .resume {
+    font-size: 110px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.07);
+  }
+}
+
+@media (max-width: 576px){
+  .about-title {
+    text-align: center;
+    margin-top: 70px;
+    h1 {
+      left: 23%;
+      font-size: 50px;
+    }
+    .resume {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .about-title {
+    text-align: center;
+    margin-top: 100px;
+    h1 {
+      left: 23%;
+      font-size: 50px;
+    }
+    .resume {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+  .about-title {
+    h1 {
+     left: 29%;
+    }
+    
+  }
+}

@@ -1,0 +1,343 @@
+.active {
+  background-color: #ffb400 !important;
+  color: white !important; }
+
+header {
+  position: fixed;
+  right: 3%;
+  top: 100px;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 100;
+  background: none; }
+  header .nav-wrapper .responsiveBtn {
+    display: none;
+    color: white;
+    font-size: 20px; }
+    header .nav-wrapper .responsiveBtn .open {
+      background: #252525;
+      width: 50px;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      border-radius: 10px;
+      margin-top: 30px; }
+      header .nav-wrapper .responsiveBtn .open i {
+        font-size: 25px !important;
+        transition: all .3s; }
+        header .nav-wrapper .responsiveBtn .open i:hover {
+          color: #ffb400; }
+  header .nav-wrapper .nav-list .nav-item {
+    list-style: none;
+    margin-bottom: 30px;
+    position: relative;
+    transition: all 0.3s ease-in;
+    overflow: hidden; }
+    header .nav-wrapper .nav-list .nav-item:hover h2 {
+      opacity: 1;
+      transform: translateX(0); }
+    header .nav-wrapper .nav-list .nav-item:hover a i {
+      background-color: #ffb400; }
+    header .nav-wrapper .nav-list .nav-item h2 {
+      line-height: 50px;
+      font-weight: 500;
+      font-size: 15px;
+      color: white;
+      text-transform: uppercase;
+      display: inline-block;
+      opacity: 0;
+      background: transparent;
+      background: #ffb400;
+      border-bottom-left-radius: 30px;
+      border-top-left-radius: 30px;
+      margin-right: 40px;
+      width: 140px;
+      padding-left: 20px;
+      transition: all 0.3s ease;
+      transform: translateX(10px);
+      transform-origin: right; }
+    header .nav-wrapper .nav-list .nav-item a {
+      text-decoration: none;
+      color: black; }
+      header .nav-wrapper .nav-list .nav-item a i {
+        position: absolute;
+        right: 15px;
+        color: white;
+        font-size: 20px;
+        background: #2b2a2a;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        line-height: 50px;
+        padding-left: 16px;
+        transition: all 0.3s ease; }
+
+@media (max-width: 576px) {
+  header {
+    right: 0%;
+    width: 100%;
+    top: 0px; }
+    header .nav-wrapper .nav-list {
+      background: #252525;
+      padding-top: 70px;
+      display: none;
+      transition: all 0.8ms ease;
+      height: 100vh; }
+      header .nav-wrapper .nav-list .nav-item {
+        margin-bottom: 0px;
+        border-bottom: 1px solid #333;
+        width: 90%;
+        cursor: pointer;
+        padding: 15px 0px; }
+        header .nav-wrapper .nav-list .nav-item h2 {
+          opacity: 1;
+          background: transparent;
+          color: #ffb400;
+          margin-left: 40px; }
+        header .nav-wrapper .nav-list .nav-item a i {
+          left: 0 !important;
+          right: unset; }
+        header .nav-wrapper .nav-list .nav-item:hover h2 {
+          opacity: 1;
+          transform: translateX(10px); }
+    header .nav-wrapper .responsiveBtn {
+      display: block;
+      position: relative;
+      z-index: 200;
+      cursor: pointer; }
+      header .nav-wrapper .responsiveBtn .open {
+        position: absolute;
+        right: 30px; }
+        header .nav-wrapper .responsiveBtn .open i {
+          display: block;
+          font-size: 30px; }
+      header .nav-wrapper .responsiveBtn .close {
+        position: absolute;
+        right: 30px;
+        padding-top: 30px;
+        display: none; }
+        header .nav-wrapper .responsiveBtn .close i {
+          font-size: 30px; }
+  #homePage img {
+    display: none; }
+  #homePage .bg {
+    display: none; } }
+
+@media (max-width: 768px) {
+  header {
+    right: 0%;
+    width: 100%;
+    top: 0px; }
+    header .nav-wrapper .nav-list {
+      background: #252525;
+      padding-top: 70px;
+      display: none;
+      transition: all 0.8ms ease;
+      height: 100vh; }
+      header .nav-wrapper .nav-list .nav-item {
+        margin-bottom: 0px;
+        border-bottom: 1px solid #333;
+        width: 90%;
+        cursor: pointer;
+        padding: 15px 0px; }
+        header .nav-wrapper .nav-list .nav-item h2 {
+          opacity: 1;
+          background: transparent;
+          color: #ffb400;
+          margin-left: 40px; }
+        header .nav-wrapper .nav-list .nav-item a i {
+          left: 0 !important;
+          right: unset; }
+        header .nav-wrapper .nav-list .nav-item:hover h2 {
+          opacity: 1;
+          transform: translateX(10px); }
+    header .nav-wrapper .responsiveBtn {
+      display: block;
+      position: relative;
+      z-index: 200;
+      cursor: pointer; }
+      header .nav-wrapper .responsiveBtn .open {
+        position: absolute;
+        right: 30px; }
+        header .nav-wrapper .responsiveBtn .open i {
+          display: block;
+          font-size: 30px; }
+      header .nav-wrapper .responsiveBtn .close {
+        position: absolute;
+        right: 30px;
+        padding-top: 30px;
+        display: none; }
+        header .nav-wrapper .responsiveBtn .close i {
+          font-size: 30px; }
+  #homePage img {
+    display: none; }
+  #homePage .bg {
+    display: none; } }
+
+.about-title {
+  position: relative;
+  top: 30%; }
+  .about-title h1 {
+    font-size: 56px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 31%;
+    left: 36%;
+    z-index: 1;
+    background: transparent; }
+    .about-title h1 span {
+      color: #ffb400;
+      background: transparent; }
+  .about-title .resume {
+    font-size: 110px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.07); }
+
+@media (max-width: 576px) {
+  .about-title {
+    text-align: center;
+    margin-top: 70px; }
+    .about-title h1 {
+      left: 23%;
+      font-size: 50px; }
+    .about-title .resume {
+      display: none; } }
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .about-title {
+    text-align: center;
+    margin-top: 100px; }
+    .about-title h1 {
+      left: 23%;
+      font-size: 50px; }
+    .about-title .resume {
+      display: none; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .about-title h1 {
+    left: 29%; } }
+
+#about {
+  text-align: center;
+  background-color: #111;
+  padding-bottom: 50px; }
+  #about .portfolio {
+    margin-left: -48px; }
+
+#contact {
+  color: white;
+  background-color: #111;
+  padding-bottom: 50px; }
+  #contact .container .row .col-lg-4 .contact-info {
+    padding: 30px 30px; }
+    #contact .container .row .col-lg-4 .contact-info h3 {
+      font-size: 26px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+    #contact .container .row .col-lg-4 .contact-info .contact-feel {
+      font-weight: 200;
+      margin-bottom: 40px; }
+    #contact .container .row .col-lg-4 .contact-info .contact-tool {
+      position: relative;
+      margin-bottom: 40px; }
+      #contact .container .row .col-lg-4 .contact-info .contact-tool p {
+        position: absolute;
+        top: 16px;
+        left: 50px; }
+      #contact .container .row .col-lg-4 .contact-info .contact-tool i {
+        color: #ffb400;
+        font-size: 35px; }
+      #contact .container .row .col-lg-4 .contact-info .contact-tool .custom {
+        background-color: #ffb400;
+        color: #111;
+        font-size: 20px;
+        font-size: 23px;
+        padding: 6px;
+        border-radius: 5px; }
+      #contact .container .row .col-lg-4 .contact-info .contact-tool span {
+        text-transform: uppercase;
+        opacity: 0.8;
+        font-weight: 400;
+        margin-left: 15px;
+        position: absolute;
+        top: -7px; }
+    #contact .container .row .col-lg-4 .contact-info .contact-icon {
+      display: flex; }
+      #contact .container .row .col-lg-4 .contact-info .contact-icon a {
+        text-decoration: none;
+        color: white; }
+        #contact .container .row .col-lg-4 .contact-info .contact-icon a i {
+          width: 40px;
+          height: 40px;
+          background: #2b2a2a;
+          border-radius: 50%;
+          transition: all 0.3s ease;
+          margin-right: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          #contact .container .row .col-lg-4 .contact-info .contact-icon a i:hover {
+            background: #ffb400; }
+  #contact .container .row .col-lg-8 .contact-form form input {
+    background: #2b2a2a;
+    border: none;
+    width: 43%;
+    height: 50px;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    outline: none;
+    color: white; }
+  #contact .container .row .col-lg-8 .contact-form form textarea {
+    background: #2b2a2a;
+    border: none;
+    display: block;
+    border-radius: 30px;
+    text-transform: uppercase;
+    outline: none;
+    width: 90%;
+    color: white;
+    padding-left: 35px;
+    padding-top: 25px; }
+  #contact .container .row .col-lg-8 .contact-form form button {
+    text-decoration: none;
+    background: #ffb400;
+    color: #eee;
+    padding: 12px 35px 12px 35px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    margin-top: 40px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    font-weight: 500; }
+    #contact .container .row .col-lg-8 .contact-form form button:hover {
+      background: #fab104d4; }
+      #contact .container .row .col-lg-8 .contact-form form button:hover i {
+        opacity: 1;
+        transform: translateX(10px); }
+    #contact .container .row .col-lg-8 .contact-form form button span {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 45px;
+      background: transparent; }
+    #contact .container .row .col-lg-8 .contact-form form button i {
+      font-size: 13px;
+      background: transparent;
+      opacity: 0;
+      transition: all 0.3s ease;
+      transform: translateX(0px); }
+
+@media (min-width: 576px) {
+  #contact {
+    padding-top: 50px; } }

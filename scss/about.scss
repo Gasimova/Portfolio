@@ -1,0 +1,313 @@
+@import "mixin.scss";
+@import "variables.scss";
+@import "header.scss";
+@import "title.scss";
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+#about {
+  text-align: center;
+  background-color: $bodyBackgroundColor;
+}
+
+#info {
+  padding-top: 100px;
+  background-color: $bodyBackgroundColor;
+  .container {
+    .row {
+      .col-lg-6 {
+        .personal-info {
+          h3 {
+            color: white;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+          }
+          ul {
+            li {
+              list-style: none;
+              width: 49%;
+              display: inline-block;
+              color: #e7e6e6b3;
+              margin-bottom: 20px;
+              font-weight: 200;
+              span {
+                color: white;
+                font-weight: 400;
+              }
+            }
+          }
+          a {
+            @include yellowBtn;
+          }
+        }
+      }
+      .col-lg-6 {
+        .row {
+          .col-lg-6 {
+            padding: 0px;
+            .info-item {
+              border: 1px solid #252525;
+              padding: 25px 3px 20px 30px;
+              margin-bottom: 40px;
+              border-radius: 5px;
+              width: 83%;
+
+              h3 {
+                color: $yellowColor;
+                font-weight: 900;
+                font-size: 50px;
+                position: relative;
+                &::after {
+                  content: "+";
+                  position: absolute;
+                  top: 0px;
+                  left: 55px;
+                  font-size: 30px;
+                  font-weight: 400;
+                  color: $yellowColor;
+                }
+              }
+              p {
+                width: 36%;
+                text-transform: uppercase;
+                color: white;
+                position: relative;
+                height: 50px;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: 6px;
+                  left: -63px;
+                  height: 1px;
+                  width: 50px;
+                  background-color: #ffffff47;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#skills {
+  padding-top: 50px;
+  background-color: $bodyBackgroundColor;
+  .container {
+    .row {
+      .col-lg-12 {
+        .skill-title {
+          text-align: center;
+          h3 {
+            text-transform: uppercase;
+            font-weight: 700;
+            color: white;
+            border-top: 1px solid #252525;
+            width: 400px;
+            margin: auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+          }
+        }
+      }
+      .col-lg-4 {
+        .skill-chart {
+          color: white;
+          position: relative;
+          margin-bottom: 70px;
+          text-align: center !important;
+          margin-left: auto;
+          margin-right: auto;
+          h5 {
+            position: absolute;
+            top: 40%;
+            left: 44%;
+            background: transparent;
+          }
+          h6 {
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            line-height: 1.2;
+            position: absolute;
+            left: 42%;
+          }
+        }
+      }
+    }
+  }
+}
+
+#experiences {
+  background-color: $bodyBackgroundColor;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  .container {
+    .row {
+      .col-lg-12 {
+        text-align: center;
+        h1 {
+          font-size: 26px;
+          color: white;
+          font-weight: 700;
+          margin-bottom: 70px;
+        }
+      }
+      .col-lg-6 {
+        .experience {
+          display: flex;
+          color: white;
+          margin-bottom: 20px;
+          .experience-icon {
+            margin-right: 25px;
+            i {
+              background-color: $yellowColor;
+              border-radius: 50%;
+              padding: 10px;
+              color: white;
+              font-size: 19px;
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                height: 84px;
+                width: 1px;
+                background-color: #252525;
+                top: 39px;
+                left: 19px;
+              }
+            }
+          }
+          .experience-detail {
+            .experience-time {
+              font-size: 12px;
+              padding: 1px 10px;
+              border-radius: 20px;
+              font-weight: 600;
+              background-color: #252525;
+              opacity: 0.8;
+              text-transform: uppercase;
+              font-weight: 400;
+            }
+            .experience-job {
+              font-size: 18px;
+              text-transform: uppercase;
+              margin-top: 20px;
+              margin-bottom: 20px;
+              .experience-company {
+                opacity: 0.8;
+              }
+            }
+            p {
+              color: #eee;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #about {
+    .container {
+      .row {
+        .col-lg-12 {
+          .about-title {
+            text-align: center;
+            margin-top: 100px;
+            h1 {
+              left: 21%;
+              font-size: 50px;
+            }
+            .resume {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #info {
+    .container {
+      .row {
+        .col-lg-6 {
+          .personal-info {
+            text-align: center;
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;r
+            h3 {
+              margin-top: 20px;
+            }
+            ul {
+              text-align: left;
+              margin: auto;
+              li {
+                span {
+                  display: block;
+                }
+              }
+            }
+          }
+          .info-item{
+            max-width: 50%;
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 768px){
+
+  #info {
+    .container {
+      .row {
+        .col-lg-6 {
+          .personal-info {
+            text-align: center;
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;r
+            h3 {
+              margin-top: 20px;
+            }
+            ul {
+              text-align: left;
+              margin-bottom: 30px;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+
+  #info{
+    .container{
+      .row{
+        .col-lg-6{
+          .personal-info{
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+

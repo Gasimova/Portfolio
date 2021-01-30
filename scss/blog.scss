@@ -1,0 +1,102 @@
+@import "mixin.scss";
+@import "variables.scss";
+@import "header.scss";
+@import "title.scss";
+
+.activePage{
+    background: $yellowColor !important;
+}
+
+#about {
+  text-align: center;
+  background-color: $bodyBackgroundColor;
+  padding-bottom: 50px;
+  .portfolio {
+    margin-left: 27px;
+  }
+}
+
+#blogs {
+  background: $bodyBackgroundColor;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  .container {
+    .row {
+      .col-lg-4 {
+        padding-right: 25px;
+        padding-left: 25px;
+        .blog-wrapper {
+          overflow: hidden;
+          border: 1px solid transparent;
+          border-radius: 10px;
+          margin-bottom: 50px;
+          a {
+            img {
+              max-width: 100%;
+              transition: all 0.3s;
+            }
+          }
+          .blog-detail {
+            background: $iconBakgroundColor;
+            padding: 20px;
+            border-top: 6px solid $yellowColor;
+            position: relative;
+            z-index: 2;
+            h3 {
+              font-size: 22px;
+              height: 70px;
+              transition: all 0.3s;
+              a {
+                text-decoration: none;
+                color: white;
+                transition: all 0.3s;
+              }
+            }
+            
+          }
+          &:hover {
+            img {
+              transform: scale(1.1);
+            }
+            .blog-detail {
+              h3 {
+                a {
+                  color: $yellowColor;
+                }
+              }
+            }
+          }
+        }
+      }
+      .col-lg-12 {
+        .pagination {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .numbers-wrapper {
+            display: flex;
+            .numbers {
+              list-style: none;
+              width: 50px;
+              height: 50px;
+              background: gray;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-right: 20px;
+              background: #252522;
+              cursor: pointer;
+              transition: all .3s;
+              font-weight: 700;
+              &:hover{
+                  background: $yellowColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

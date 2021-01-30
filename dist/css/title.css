@@ -1,0 +1,46 @@
+.about-title {
+  position: relative;
+  top: 30%; }
+  .about-title h1 {
+    font-size: 56px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 31%;
+    left: 36%;
+    z-index: 1;
+    background: transparent; }
+    .about-title h1 span {
+      color: #ffb400;
+      background: transparent; }
+  .about-title .resume {
+    font-size: 110px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.07); }
+
+@media (max-width: 576px) {
+  .about-title {
+    text-align: center;
+    margin-top: 70px; }
+    .about-title h1 {
+      left: 23%;
+      font-size: 50px; }
+    .about-title .resume {
+      display: none; } }
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .about-title {
+    text-align: center;
+    margin-top: 100px; }
+    .about-title h1 {
+      left: 23%;
+      font-size: 50px; }
+    .about-title .resume {
+      display: none; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .about-title h1 {
+    left: 29%; } }
